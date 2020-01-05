@@ -1,0 +1,12 @@
+{
+    "permissions": {
+        "function": {
+            "basicFunction": [
+                "create",
+                "read",
+                "update",
+                "delete"
+            ]
+        }
+    }
+}

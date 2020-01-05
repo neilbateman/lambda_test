@@ -4,6 +4,20 @@
 			"service": "Lambda",
 			"providerPlugin": "awscloudformation",
 			"build": true
+		},
+		"serverFunction": {
+			"service": "Lambda",
+			"providerPlugin": "awscloudformation",
+			"build": true,
+			"dependsOn": [
+				{
+					"category": "function",
+					"resourceName": "basicFunction",
+					"attributes": [
+						"Name"
+					]
+				}
+			]
 		}
 	}
 }
