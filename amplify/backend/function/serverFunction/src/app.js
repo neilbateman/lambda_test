@@ -36,9 +36,11 @@ app.use(function(req, res, next) {
  * Example get method *
  **********************/
 
-app.get('/items', function(req, res) {
-  // Add your code here
-  res.json({success: 'get call succeed!', url: req.url});
+app.get('/people', function(req, res) {
+  const people = [{name: 'Neil'}, {name: 'Connie'}, {name: 'David'}];
+  res.json({
+    people
+  });
 });
 
 app.get('/items/*', function(req, res) {
